@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="85dp"
+        android:layout_height="76dp"
+        android:src="@drawable/user"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:background="@drawable/et_shape"
+        android:ems="10"
+        android:layout_marginTop="8dp"
+        android:hint="Name"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:padding="8dp"/>
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_marginTop="10dp"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:hint="Email"
+        android:background="@drawable/et_shape"
+        android:ems="10"
+        android:textSize="14dp"
+        android:paddingLeft="8dp"
+        android:layout_gravity="center"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/etdate"
+        android:layout_marginTop="10dp"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:hint="Date"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:background="@drawable/et_shape"
+        android:ems="10"
+        android:textSize="14dp"
+        android:paddingLeft="8dp"
+        android:layout_gravity="center"
+        android:inputType="text"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <Spinner
+            android:id="@+id/spGender"
+            android:layout_width="330dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/et_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.105"></Spinner>
+
+
+
+        <Spinner
+            android:id="@+id/spProfession"
+            android:layout_width="330dp"
+            android:layout_height="46dp"
+            android:layout_below="@id/spGender"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/et_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Spinner>
+
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_btn"
+            android:text="Update"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.896" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

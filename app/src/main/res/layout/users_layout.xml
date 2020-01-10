@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="380dp"
+    android:layout_gravity="center"
+    android:id="@+id/rl"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/bg_txt"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="65dp"
+        android:background="@drawable/image_circle"
+        android:src="@drawable/user">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/username"
+        android:text="Username"
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_below="@+id/username"
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginLeft="12dp"
+        android:textSize="15dp"
+        android:text="Male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:id="@+id/tvProfession"
+        android:layout_below="@+id/tvGender"
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginLeft="12dp"
+        android:textSize="15dp"
+        android:layout_marginTop="8dp"
+        android:text="Self-employed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGender"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="-15dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="2/1/2020"
+        android:textSize="14dp"></TextView>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProfession"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="-18dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="abc@gmail.com"
+        android:textSize="14dp"></TextView>
+</RelativeLayout>
+
+</LinearLayout>
